@@ -20,7 +20,7 @@
 
 #Website Related Configurations
 site_name: the sudo academy
-site_url: https://thesudoacademy.com
+site_url: https://thesudo.academy
 docs_dir: content
 
 plugins:
