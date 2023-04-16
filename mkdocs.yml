@@ -44,6 +44,7 @@ theme:
     - navigation.sections
     - navigation.indexes
     - navigation.instant
+    - navigation.footer
     - toc.follow
 
 markdown_extensions:
