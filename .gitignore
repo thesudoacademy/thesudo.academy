@@ -1,0 +1,8 @@
+# excluding site directory
+site/
+# excluding sitemaps
+sitemap.xml
+sitemap.xml.gz
+
+# excluding xml files for now
+*.xml
