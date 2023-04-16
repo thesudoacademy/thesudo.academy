@@ -18,50 +18,5 @@
 #    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 #    SOFTWARE.
 
-#Website Related Configurations
-site_name: the sudo academy
-site_url: https://thesudoacademy.com
-docs_dir: content
-
-plugins:
-  - monorepo
-
-theme:
-  name: material
-  logo: assets/images/icon-light.png
-  favicon: assets/images/icon-light.png
-  palette:
-    - scheme: slate
-      toggle:
-        icon: material/brightness-7
-        name: Switch to Dark Mode
-    - scheme: default
-      toggle:
-        icon: material/brightness-4
-        name: Switch to Light Mode
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.indexes
-    - navigation.instant
-    - toc.follow
-
-markdown_extensions:
-  - attr_list
-  - md_in_html
-
-nav:
-  - Home:
-    - "index.md"
-    - About:
-      - "about/README.md"
-  - Foundations: ""
-  - Programming & Data: ""
-  - Cloud & DevOps: ""
-  - Security & Observability: ""
-
-
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/thesudoacademy
+FROM squidfunk/mkdocs-material:9.1.5
+RUN pip install mkdocs-monorepo-plugin

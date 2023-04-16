@@ -11,14 +11,7 @@ This repository contains the source code, resources, and materials for the sudo 
 - 📰 Blog: Informative and engaging articles on various Cloud and DevOps topics, trends, and best practices.
 
 ## How to Contribute
-We welcome contributions from the community! If you'd like to contribute to the sudo academy, please follow these steps:
-
-1. Fork this repository.
-2. Create a new branch for your changes.
-3. Make your changes and commit them to your branch.
-4. Open a pull request to merge your changes back into the main repository.
-
-Please be sure to follow our [Code of Conduct](CODE_OF_CONDUCT.md) and [Contribution Guidelines](CONTRIBUTING.md) when making contributions.
+We welcome contributions to this project! To get started, please read our [contribution guidelines](CONTRIBUTING.md).
 
 ## License
 

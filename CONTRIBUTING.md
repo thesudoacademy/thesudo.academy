@@ -1,12 +1,68 @@
 # Contribution Guidelines
 
-We encourage and welcome contributions from the community! To ensure a smooth and efficient contribution process, please follow these guidelines:
+We appreciate your interest in contributing to **_the sudo academy_**! This document outlines the guidelines and best practices for contributing to this project.
 
-1. **Fork the repository:** Start by forking the repository to your own GitHub account. This will allow you to make changes and submit a pull request for review.
-2. **Create a branch:** Create a new branch with a descriptive name for your changes. This will help keep your changes separate from the main repository and make it easier to review and merge your changes.
-3. **Make your changes:** Make your changes and commit them to your branch. Be sure to write clear, concise commit messages that explain the purpose of your changes.
-4. **Test your changes:** Before submitting a pull request, ensure that your changes work as expected and do not introduce new issues.
-5. **Submit a pull request:** Once you have made and tested your changes, submit a pull request to the main repository. Be sure to provide a detailed description of your changes and reference any related issues.
-6. **Review and feedback:** Be prepared to receive feedback on your pull request. Be open to suggestions and be willing to make additional changes if requested. The maintainers will review your pull request and provide feedback or request changes as necessary.
 
-Thank you for your interest in contributing to **the sudo academy**! We look forward to working with you and building a strong, supportive community together.
+## Code of Conduct
+
+By participating in this project, you are expected to uphold our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+
+## Reporting Issues
+
+If you find a bug or have a suggestion for improvements, please create an issue on the GitHub repository.
+Be sure to provide enough information for us to understand and reproduce the issue
+
+
+## Local Development Setup
+
+### Docker for serving the website
+ 
+1. Install [Docker](https://www.docker.com/products/docker-desktop) on your system.
+2. Clone the repository: `git clone https://github.com/thesudoacademy/thesudo.academy.git`
+3. Navigate to the project directory: `cd thesudo.academy`
+4. Build the Docker image: `docker build -t thesudo-academy .`
+5. Run the Docker container: `docker run --rm -it -p 8000:8000 -v ${PWD}:/docs thesudo-academy`
+
+The site should now be accessible at http://localhost:8000 and making changes to the documentation files will be automatically reflected in the site. 
+
+#### Build the website using Docker
+
+1. Build the Docker image: `docker build -t thesudo-academy .`
+2. Run the Docker container to build the website: `docker run --rm -it -v ${PWD}:/docs thesudo-academy build`
+
+The built website will be available in the `site` directory within your project folder.
+
+### Using Docker Compose
+
+1. Install [Docker Compose](https://docs.docker.com/compose/install/) on your system.
+2. Clone the repository: `git clone https://github.com/thesudoacademy/thesudo.academy.git`
+3. Navigate to the project directory: `cd thesudo.academy`
+4. Run the Docker Compose for local development: `docker-compose up`
+
+The site should now be accessible at http://localhost:8000, and making changes to the documentation files will be automatically reflected in the site.
+
+#### Docker Compose for building the website
+
+1. Run the Docker Compose to build the website: `docker-compose run --rm mkdocs build`
+
+The built website will be available in the `site` directory within your project folder.
+
+## Submitting a Pull Request
+Before submitting a pull request, make sure you have:
+
+1. Forked the repository.
+2. Created a new branch for your changes.
+3. Made your changes in the new branch.
+4. Tested your changes locally.
+5. Pushed your changes to your forked repository.
+6. Created a pull request with a clear and concise description of your changes.
+
+We will review your pull request and provide feedback. If everything looks good, we'll merge your changes.
+
+Thank you for your contributions!
+
+
+## License
+
+By contributing, you agree that your contributions will be licensed under the MIT License. See [LICENSE](LICENSE) for more information.
