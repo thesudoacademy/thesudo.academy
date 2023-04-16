@@ -1,0 +1,67 @@
+#    Copyright (c) 2023 Hafiz Faisal Hashim Soomro <fsoomro@thesudo.academy>
+#
+#    Permission is hereby granted, free of charge, to any person obtaining a copy
+#    of this software and associated documentation files (the "Software"), to deal
+#    in the Software without restriction, including without limitation the rights
+#    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+#    copies of the Software, and to permit persons to whom the Software is
+#    furnished to do so, subject to the following conditions:
+#
+#    The above copyright notice and this permission notice shall be included in all
+#    copies or substantial portions of the Software.
+#
+#    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+#    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+#    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+#    SOFTWARE.
+
+#Website Related Configurations
+site_name: the sudo academy
+site_url: https://thesudoacademy.com
+docs_dir: content
+
+plugins:
+  - monorepo
+
+theme:
+  name: material
+  logo: assets/images/icon-light.png
+  favicon: assets/images/icon-light.png
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7
+        name: Switch to Dark Mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-4
+        name: Switch to Light Mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.instant
+    - toc.follow
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home:
+    - "index.md"
+    - About:
+      - "about/README.md"
+  - Foundations: ""
+  - Programming & Data: ""
+  - Cloud & DevOps: ""
+  - Security & Observability: ""
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/thesudoacademy
